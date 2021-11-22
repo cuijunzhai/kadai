@@ -49,7 +49,7 @@ public:
     void  setSpeed(float speed, float accel);
     float getSpeed() { return speed; }
     float getAccel() { return accel; }
-    vitrtual void Update();
+    virtual void Update();
 
 
 private:
