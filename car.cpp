@@ -29,7 +29,7 @@ public:
     float getX(){return x;}
     float getY(){return y;}
     float getZ(){return z;}
-    virtual void Update();
+    virtual void Update(){}
 
 
 private:
@@ -49,7 +49,7 @@ public:
     void  setSpeed(float speed, float accel);
     float getSpeed() { return speed; }
     float getAccel() { return accel; }
-    virtual void Update();
+    virtual void Update(){}
 
 
 private:
