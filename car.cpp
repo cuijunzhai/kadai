@@ -1,20 +1,20 @@
 #include <stdio.h>
 
-/*ObjectƒNƒ‰ƒX
-x, y, zÀ•W‚ð•Û‘¶‚·‚é•Ï”AUpdateŠÖ”‚ðŽ‚ÂB
-UpdateŠÖ”‚Ívirtual‚Åì‚Á‚Ä‚­‚¾‚³‚¢B
+/*Objectã‚¯ãƒ©ã‚¹
+x, y, zåº§æ¨™ã‚’ä¿å­˜ã™ã‚‹å¤‰æ•°ã€Updateé–¢æ•°ã‚’æŒã¤ã€‚
+Updateé–¢æ•°ã¯virtualã§ä½œã£ã¦ãã ã•ã„ã€‚
 
-Vehicle(æ‚è•¨)ƒNƒ‰ƒX
-ObjectƒNƒ‰ƒX‚ðŒp³‚µ‚½ƒNƒ‰ƒXB
-‚±‚±‚Å‚ÍSpeedUpƒNƒ‰ƒX‚ð’Ç‰Á‚µ‚Ä‚­‚¾‚³‚¢B
-‚Ü‚½speed‚Æaccel‚Ì•Ï”‚ð‚±‚±‚Å’Ç‰Á‚µ‚Ä‚­‚¾‚³‚¢B
-SpeedUpƒNƒ‰ƒX‚Ívirtual‚Åì‚Á‚Ä‚­‚¾‚³‚¢B
-(³Šm‚È‘¬“x‚Ìˆ—‚ðs‚¢‚½‚¢ê‡‚ÍAŒü‚«‚Æ‰Á‘¬“x‚ÅA
-    ƒxƒNƒgƒ‹‚ðŒvŽZ‚·‚é•û–@‚Å‚à\‚¢‚Ü‚¹‚ñB)
+Vehicle(ä¹—ã‚Šç‰©)ã‚¯ãƒ©ã‚¹
+Objectã‚¯ãƒ©ã‚¹ã‚’ç¶™æ‰¿ã—ãŸã‚¯ãƒ©ã‚¹ã€‚
+ã“ã“ã§ã¯SpeedUpã‚¯ãƒ©ã‚¹ã‚’è¿½åŠ ã—ã¦ãã ã•ã„ã€‚
+ã¾ãŸspeedã¨accelã®å¤‰æ•°ã‚’ã“ã“ã§è¿½åŠ ã—ã¦ãã ã•ã„ã€‚
+SpeedUpã‚¯ãƒ©ã‚¹ã¯virtualã§ä½œã£ã¦ãã ã•ã„ã€‚
+(æ­£ç¢ºãªé€Ÿåº¦ã®å‡¦ç†ã‚’è¡Œã„ãŸã„å ´åˆã¯ã€å‘ãã¨åŠ é€Ÿåº¦ã§ã€
+    ãƒ™ã‚¯ãƒˆãƒ«ã‚’è¨ˆç®—ã™ã‚‹æ–¹æ³•ã§ã‚‚æ§‹ã„ã¾ã›ã‚“ã€‚)
 
-    Car(ŽÔ)ƒNƒ‰ƒX
-    VehicleƒNƒ‰ƒX‚ðŒp³‚µ‚½ƒNƒ‰ƒX
-    speed‚Ì•ÏX‚ð‚±‚±‚ÅCar—p‚ÉŽÀ‘•‚µ‚Ä‚­‚¾‚³‚¢B*/
+    Car(è»Š)ã‚¯ãƒ©ã‚¹
+    Vehicleã‚¯ãƒ©ã‚¹ã‚’ç¶™æ‰¿ã—ãŸã‚¯ãƒ©ã‚¹
+    speedã®å¤‰æ›´ã‚’ã“ã“ã§Carç”¨ã«å®Ÿè£…ã—ã¦ãã ã•ã„ã€‚*/
 
 class Object
 {
@@ -32,7 +32,7 @@ public:
     virtual void Update();
 
 
-public:
+private:
     float x, y, z;
     
 };
@@ -49,6 +49,7 @@ public:
     void  setSpeed(float speed, float accel);
     float getSpeed() { return speed; }
     float getAccel() { return accel; }
+    vitrtual void Update();
 
 
 private:
