@@ -53,6 +53,7 @@ int*Int=new int[10];
 // 以下の継承先クラスのデストラクタが正しく呼び出されるように、
 // クラスを修正してください。
 
+
 class Test
 {
 public:
@@ -79,13 +80,12 @@ public:
 };
 int main()
 {
-    Test* t;
-    t = new Test2();
+    Test* t = new Test2;
+    t->~Test();
 
     delete t;
     return 0;
 }
-
 
 
 // 第4問(25点)
